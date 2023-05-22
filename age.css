@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 0%, 93%);
+  font-family: 'Poppins', sans-serif;
+}
+.calc-card {
+background-color: white;
+  width: 536px;
+  height: 421px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 28px;
+  border-bottom-right-radius: 148px;
+  box-shadow: 10px 20px 84px 2px #0000002b;
+  z-index:-3
+}
+.year,
+.month,
+.day {
+  color:hsla(0, 1%, 44%, 0.897);
+  font-weight:lighter;
+  font-size:14px;
+  position:absolute;
+  top:15px;
+  text-transform: uppercase;
+}
+.day {
+  left:30px;
+}
+.month {
+  left:160px;
+}
+.year {
+  left:310px;
+}
+.dayI,
+.monthI,
+.yearI {
+  outline: none;
+  border-radius: 5px;
+  width: 114px;
+  position: absolute;
+  left: 20px;
+  top: 53px;
+  height: 62px;
+  border: .5px gray double;
+  color:black;
+  font-weight:700;
+  font-size:25px;
+  padding-left:10px;
+}
+.dayI::placeholder,
+.monthI::placeholder,
+.yearI::placeholder {
+  color: hsla(0, 1%, 44%, 0.548);
+}
+.monthI {
+  left:150px
+}
+.yearI {
+  left: 280px
+}
+.dayI:focus,
+.monthI:focus,
+.yearI:focus {
+  border-color: hsl(259, 100%, 65%);
+}
+hr {
+transform: scaleX(0.7) scaleY(.6) translateY(231px) translateX(-59px);
+}
+.subB {
+  width: 77px;
+  border-radius: 50%;
+  position: absolute;
+  right: 45px;
+  top: 105px;
+  height: 77px;
+  background-color: hsl(259, 100%, 65%);
+  z-index: -1;
+  transition-duration: .5s;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subB:hover {
+  background-color: rgba(0, 0, 0, 0.774);
+}
+.dayO,
+.monthO,
+.yearO {
+  font-size: 47px;
+  color: hsl(259, 100%, 65%);
+  position: absolute;
+  left: 41px;
+  font-weight: 800;
+  font-style: italic;
+  top: 150px;
+}
+.monthO {
+  top:207px;
+}
+.dayO {
+  top:264px;
+}
+.yearN,
+.monthN,
+.dayN {
+color: black;
+  position: absolute;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 47px;
+  left: 130px;
+  top: 161px;
+}
+.monthN {
+  top:218px
+}
+.dayN {
+  top:274px;
+}
